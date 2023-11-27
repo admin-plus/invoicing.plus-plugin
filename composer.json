@@ -1,0 +1,11 @@
+{
+    "name": "ADMIN-PLUS/Invoicing.plus-plugin.git",
+    "description": "Librairie PHP pour s'interfacer avec Invoicing.plus",
+    "autoload": {
+        "psr-4": {
+            "AdminPlus\\InvoicingPlusPlugin\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
