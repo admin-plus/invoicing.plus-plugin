@@ -1,6 +1,6 @@
 <?php
  
-namespace InvoicingPlusPlugin;
+namespace AdminPlus\InvoicingPlusPlugin;
  
 class HelloWorld
 {
