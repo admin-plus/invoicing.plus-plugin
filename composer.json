@@ -1,6 +1,6 @@
 {
     "name": "admin-plus/invoicing.plus-plugin",
-    "description": "Librairie PHP pour s'interfacer avec Invoicing.plus",
+    "description": "Librairie PHP pour s'interfacer avec le logiciel de facturation Invoicing.plus",
     "autoload": {
         "psr-4": {
             "AdminPlus\\InvoicingPlusPlugin\\": "src/"
