@@ -7,7 +7,10 @@ composer require admin-plus/invoicing.plus-plugin:dev-master
 
 # Usage
 
-```
+```php
+
+<?php
+
 use AdminPlus\InvoicingPlusPlugin\InvoicingPlus;
 
 $invoicing = new InvoicingPlus();
