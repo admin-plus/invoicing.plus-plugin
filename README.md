@@ -3,6 +3,7 @@
 # Librairie PHP pour interfacer le logiciel de facturation Invoicing.plus
 
 ## Installation
+
 ```
 composer require admin-plus/invoicing.plus-plugin:dev-master
 ```
@@ -69,7 +70,4 @@ if ($check->successful()) {
 } else {
     var_dump($check->error());
 }
-
-
-
 ```
