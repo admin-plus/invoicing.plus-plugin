@@ -25,7 +25,7 @@ if ($check->successful()) {
     var_dump($check->data());
 
     // je n'ai pas encore de token
-    // j'en obtient un avec mon email et mon mot de passe (J'ai bien sur une société de créée sur Invoicing.plus)
+    // j'en obtiens un avec mon email et mon mot de passe (j'ai bien sur une société de créée sur Invoicing.plus)
     // sinon j'en crée une ici https://invoicing.plus/trial?a=5
     $token = $invoicing->newToken('de**@**us.fr', 'xxxxxx');    
     if ($token->successful()) {
@@ -34,10 +34,10 @@ if ($check->successful()) {
         var_dump($token->error());
     }
 
-    // je connais mon token, je le récupère depuis un fichier d'environnement, on travaille bien hein !
-    $mytoken = env('invoicingplus.token')
+    // ou alors je connais déjà mon token, je le récupère depuis un fichier d'environnement, on travaille bien hein !
+    $mytoken = env('invoicing.token')
     // et je l'affecte à mon objet
-    $invoicing->setCompany($mytoken);
+    $invoicing->setToken($mytoken);
 
     // je requête mes sociétés auxquelles j'ai accès
     $companies = $invoicing->companies();
