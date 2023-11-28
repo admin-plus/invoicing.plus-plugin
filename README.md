@@ -1,11 +1,13 @@
 # invoicing.plus-plugin
 
-# Installation
+# Librairie PHP pour interfacer le logiciel de facturation Invoicing.plus
+
+## Installation
 ```
 composer require admin-plus/invoicing.plus-plugin:dev-master
 ```
 
-# Usage
+## Usage
 
 ```php
 
@@ -22,7 +24,8 @@ if ($check->successful()) {
     // service API OK, affichage de la data descriptive
     var_dump($check->data());
 
-    // je n'ai pas encore de token, j'en obtient un avec mon email et mon mot de passe (J'ai bien sur une société de créée sur Invoicing.plus)
+    // je n'ai pas encore de token
+    // j'en obtient un avec mon email et mon mot de passe (J'ai bien sur une société de créée sur Invoicing.plus)
     // sinon j'en crée une ici https://invoicing.plus/trial?a=5
     $token = $invoicing->newToken('de**@**us.fr', 'xxxxxx');    
     if ($token->successful()) {
@@ -62,9 +65,6 @@ if ($check->successful()) {
     // je veux faire autre chose, créer des clients, des produits, des factures
     // je consulte la doc https://api.invoicing.plus
     // je demande des infos à Jean-Didier (joignable par tous les moyens 😁) le développeur https://invoicing.plus/contact 
-
-
-
 
 } else {
     var_dump($check->error());
