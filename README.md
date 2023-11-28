@@ -36,7 +36,7 @@ if ($check->successful()) {
     }
 
     // ou alors je connais déjà mon token, je le récupère depuis un fichier d'environnement, on travaille bien hein !
-    $mytoken = env('invoicing.token')
+    $mytoken = env('invoicing.token');
     // et je l'affecte à mon objet
     $invoicing->setToken($mytoken);
 
